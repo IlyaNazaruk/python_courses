@@ -18,7 +18,6 @@ coun1 = 2
 #     coun1 +=1
 for coun1 in range (coun1, right):
     raw_of_numbers.append(coun1+1)
-i = 1
 for left in range(left, right+1):
     print(left,':', end=' ')
     for counter in range(counter,right-1):
