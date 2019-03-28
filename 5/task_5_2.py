@@ -8,20 +8,22 @@
 # 103:
 # 104: 2 4 8 13 26 52
 # 105: 3 5 7 15 21 35
-m = int(input())
-n = int(input())
+left = int(input())
+right = int(input())
 counter = 2
-list=[2]
+raw_of_numbers=[2]
 coun1 = 2
-while coun1 != n:
-    list.append(coun1+1)
-    coun1 +=1
+# while coun1 != n:
+#     raw_of_numbers.append(coun1+1)
+#     coun1 +=1
+for coun1 in range (coun1, right):
+    raw_of_numbers.append(coun1+1)
 i = 1
-for m in range(m, n+1):
-    print(m,':', end=' ')
-    for counter in range(counter,n-1):
-        for i in range(n-1):
-          if m / counter == list[i] :
+for left in range(left, right+1):
+    print(left,':', end=' ')
+    for counter in range(counter,right-1):
+        for i in range(right-1):
+          if left / counter == raw_of_numbers[i] :
               print(counter, end=' ')
     counter = 2
     i = 1
