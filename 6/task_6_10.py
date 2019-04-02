@@ -14,14 +14,8 @@ for attempt in range(number_of_attempts):
         print('You are the winner')
         break
     elif my_number < random_number:
-        if attempt + 1 == number_of_attempts:
-            print('u are looser this number is -', random_number)
-            break
-        else:
             print('your number <<<< than')
     elif my_number > random_number:
-        if attempt + 1 == number_of_attempts:
-            print('u are looser this number is -', random_number)
-            break
-        else:
             print('your number >>>>>> than')
+else:
+    print('u are looser this number is -', random_number)

@@ -23,3 +23,4 @@ for number in range(start,end):
             result.append([number, second_number])
             skip.append(second_number)
 print(result)
+print()
