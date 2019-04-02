@@ -4,7 +4,10 @@
 start = 200
 end = 300
 result = []
+skip = []
 for number in range(start,end):
+    if number in skip:
+        continue
     finish = int(number / 2)
     second_number = 0
     for counter in range(1, finish + 1):
@@ -18,5 +21,5 @@ for number in range(start,end):
                 sum += counter
         if sum == number:
             result.append([number, second_number])
+            skip.append(second_number)
 print(result)
-print(result[1][1])
