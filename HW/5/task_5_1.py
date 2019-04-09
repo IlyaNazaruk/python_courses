@@ -3,8 +3,6 @@
 # модулю элемент.[02-4.2-ML-17]
 import random
 A = []
-i = 0
-j = 0
 for i in range(5):
     B = []
     for j in range(5):
@@ -25,7 +23,6 @@ for c in range(5):
     for e in range(5):
         d=A[i][j]/max
         print('%.2f'%d, end=' ')
-
         j += 1
     print()
     i += 1
