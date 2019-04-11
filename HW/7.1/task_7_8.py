@@ -5,11 +5,8 @@ def palindrom(*words):
     for word in words:
         length = len(word) // 2
         for i in range(length):
-            if word[i] != word[-1 - i]:
-                pass
-            else:
+            if word[i] == word[-1 - i]:
                 if i + 1 == length:
                     print(word)
-
 words = ['ooppoo', 'qewreq', 'iotoi']
 palindrom(*words)
